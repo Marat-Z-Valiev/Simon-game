@@ -8,9 +8,9 @@ $(function () {
     let strict = false;
     const colorsArray = ['white', 'yellow', 'pink', 'blue'];
     const whiteAudio = new Audio('sounds/sound1.wav');
-    const yellowAudio = new Audio('sounds/sound2.wav');
+    const blueAudio = new Audio('sounds/sound2.wav');
     const pinkAudio = new Audio('sounds/sound3.wav');
-    const blueAudio = new Audio('sounds/sound4.wav');
+    const yellowAudio = new Audio('sounds/sound4.wav');
     
     // jQuery variables
     const startButton = $('#start');
@@ -90,7 +90,7 @@ $(function () {
         if (i >= array.length) {
           clearInterval(interval);
         }
-      }, 900);
+      }, 1100);
     }
     
     // Checks player action

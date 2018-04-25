@@ -155,3 +155,10 @@ h1 {
   background: -webkit-gradient(linear, left top, right top, from(#ff2b2b), color-stop(15%, #c23131), color-stop(51%, #ff0505), color-stop(71%, #cf1d1d), to(#ab1818)) !important;
   background: linear-gradient(to right, #ff2b2b 0%, #c23131 15%, #ff0505 51%, #cf1d1d 71%, #ab1818 100%) !important;
 }
+
+@media screen and (max-width: 767px) {
+  .grid-container {
+    height: 100%;
+    width: 100%;
+  }
+}

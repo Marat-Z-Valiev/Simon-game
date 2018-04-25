@@ -149,3 +149,11 @@ h1{
     }
 
 }
+
+//Responsive design
+@media screen and (max-width: 767px){
+    .grid-container{
+        height: 100%;
+        width: 100%;
+    }
+} 
