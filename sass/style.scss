@@ -151,9 +151,33 @@ h1{
 }
 
 //Responsive design
+@media screen and (max-width: 360px){
+    .grid-container{
+        .controls-panel{
+            .controls{
+                button{
+                    height: 20px;
+                }
+            }
+        }
+    } 
+}
+
 @media screen and (max-width: 767px){
     .grid-container{
         height: 100%;
         width: 100%;
+
+        .controls-panel{
+            .controls{
+                button{
+                    height: 20px;
+                }
+            }
+        }
     }
-} 
+}
+
+
+
+// .grid-container .controls-panel .controls button

@@ -156,9 +156,18 @@ h1 {
   background: linear-gradient(to right, #ff2b2b 0%, #c23131 15%, #ff0505 51%, #cf1d1d 71%, #ab1818 100%) !important;
 }
 
+@media screen and (max-width: 360px) {
+  .grid-container .controls-panel .controls button {
+    height: 20px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .grid-container {
     height: 100%;
     width: 100%;
+  }
+  .grid-container .controls-panel .controls button {
+    height: 20px;
   }
 }
