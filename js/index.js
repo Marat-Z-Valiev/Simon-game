@@ -1,6 +1,6 @@
 
 $(function () {
-    // game variables
+    // Game variables
     let comp = [];
     let player = [];
     let count = 0;
@@ -22,7 +22,7 @@ $(function () {
     const pink = $('#pink');
     const blue = $('#blue');
     
-    // reset colors
+    // Reset colors
     function resetColor() {
       white.css('background', 'radial-gradient(#ffffff61, #ffffffe8)');
       yellow.css('background', 'radial-gradient(#efe89566, #e9e293d9)');
@@ -30,7 +30,7 @@ $(function () {
       blue.css('background', 'radial-gradient(rgba(136, 237, 241, 0.329), rgba(86, 250, 255, 0.9))');
     }
     
-    // random color picker
+    // Random color picker
     function randomizer() { 
       count++;    
       display.val(count);
@@ -40,7 +40,7 @@ $(function () {
       displaySet(comp);
     }
     
-    // current color animation
+    // Current color animation
     function currentDisplay(color) {
       switch (color) {
         case 'white':
@@ -81,7 +81,7 @@ $(function () {
       }, 300);
     }
     
-    // run the color list
+    // Run the color list
     function displaySet(array) {
       let i = 0;
       let interval = setInterval(function() {
@@ -93,7 +93,7 @@ $(function () {
       }, 900);
     }
     
-    // checks player action
+    // Checks player action
     function checkIds() {
       colors.click(function() {
         let ID = $(this).attr('id');
@@ -130,7 +130,7 @@ $(function () {
         }
       });
     } 
-
+    //Start the game
     function start(){
       resetColor();
       colors.off();
@@ -143,7 +143,7 @@ $(function () {
       checkIds();
     }
     
-    // normal mode button
+    // Normal mode button
     startButton.on('click', function (){
       strict = false;
       start();
@@ -151,7 +151,7 @@ $(function () {
       strictButton.removeClass('active-strict');
     });
     
-    // strict mode button
+    // Strict mode button
     strictButton.on('click', function (){
       strict = true;
       start();
@@ -159,6 +159,7 @@ $(function () {
       startButton.removeClass('active-start');
     });
 
+    //Reset settings on page reload
     if(location.reload){
       count = 0;
       display.val('--');   
