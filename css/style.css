@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css?family=Gugi");
+body {
+  font-family: 'Gugi', serif;
+  background: url("../images/bg.jpg") no-repeat fixed center center;
+  background-size: cover;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3em;
+  color: #FFFFFF;
+}
+
+.grid-container {
+  display: grid;
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.grid-container .white {
+  grid-column: 1/4;
+  width: 33%;
+  justify-self: center;
+  border-top-left-radius: 180px;
+  background: radial-gradient(#ffffff61, #ffffffe8);
+  opacity: .7;
+}
+
+.grid-container .white:hover {
+  opacity: .8;
+  cursor: pointer;
+  background: #ffffff;
+  -webkit-box-shadow: 2px 1px 45px -3px #ffffff;
+          box-shadow: 2px 1px 45px -3px #ffffff;
+  border: 2px solid #fff;
+}
+
+.grid-container .yellow {
+  border-bottom-left-radius: 180px;
+  background: radial-gradient(#efe89566, #e9e293d9);
+}
+
+.grid-container .yellow:hover {
+  opacity: .8;
+  cursor: pointer;
+  border: 2px solid #fffde7;
+  background: radial-gradient(#ffffff, #fff587);
+  -webkit-box-shadow: 2px 1px 45px -3px #fffcdc;
+          box-shadow: 2px 1px 45px -3px #fffcdc;
+}
+
+.grid-container .pink {
+  border-top-right-radius: 180px;
+  background: radial-gradient(#ef82c554, #ef82c5d9);
+}
+
+.grid-container .pink:hover {
+  opacity: .8;
+  cursor: pointer;
+  border: 2px solid #f9d4eb;
+  background: radial-gradient(#ffffff, #ef82c5);
+  -webkit-box-shadow: 2px 1px 45px -3px #ef82c5;
+          box-shadow: 2px 1px 45px -3px #ef82c5;
+}
+
+.grid-container .blue {
+  border-bottom-right-radius: 180px;
+  grid-column: 1/4;
+  width: 33%;
+  justify-self: center;
+  background: radial-gradient(rgba(136, 237, 241, 0.329), rgba(86, 250, 255, 0.9));
+}
+
+.grid-container .blue:hover {
+  opacity: .8;
+  cursor: pointer;
+  border: 2px solid #5efaff;
+  background: radial-gradient(#ffffff, #92edf0);
+  -webkit-box-shadow: 2px 1px 45px -3px #c6f5f7;
+          box-shadow: 2px 1px 45px -3px #c6f5f7;
+}
+
+.grid-container .controls-panel {
+  display: grid;
+  background-color: #16bebe;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.grid-container .controls-panel .display {
+  grid-column: 1/4;
+  width: 45%;
+  height: 45%;
+  justify-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  text-align: center;
+  font-size: 2em;
+  border-radius: 10px;
+  border: 2px solid #FFFFFF;
+}
+
+.grid-container .controls-panel .display:hover {
+  cursor: default;
+}
+
+.grid-container .controls-panel .controls {
+  text-align: center;
+}
+
+.grid-container .controls-panel .controls button {
+  margin-top: 5px;
+  width: 60%;
+  height: 40%;
+  border: 2px solid #000000;
+  background: -webkit-gradient(linear, left top, right top, from(#6229ff), color-stop(15%, #5331c4), color-stop(51%, #3f05ff), color-stop(71%, #451bcf), to(#4817ab));
+  background: linear-gradient(to right, #6229ff 0%, #5331c4 15%, #3f05ff 51%, #451bcf 71%, #4817ab 100%);
+  outline: none;
+}
+
+.grid-container .controls-panel .controls button:hover {
+  cursor: pointer;
+}
+
+.grid-container .controls-panel .start {
+  border-bottom-left-radius: 40px;
+  grid-column: 1/2;
+}
+
+.grid-container .controls-panel .start:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#2bff2b), color-stop(28%, #2fff05), color-stop(51%, #4fc232), color-stop(68%, #1fcf2b), to(#3eab19));
+  background: linear-gradient(to right, #2bff2b 0%, #2fff05 28%, #4fc232 51%, #1fcf2b 68%, #3eab19 100%);
+}
+
+.grid-container .controls-panel .active-start {
+  background: -webkit-gradient(linear, left top, right top, from(#2bff2b), color-stop(28%, #2fff05), color-stop(51%, #4fc232), color-stop(68%, #1fcf2b), to(#3eab19)) !important;
+  background: linear-gradient(to right, #2bff2b 0%, #2fff05 28%, #4fc232 51%, #1fcf2b 68%, #3eab19 100%) !important;
+}
+
+.grid-container .controls-panel .strict {
+  border-top-left-radius: 40px;
+}
+
+.grid-container .controls-panel .strict:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#ff2b2b), color-stop(15%, #c23131), color-stop(51%, #ff0505), color-stop(71%, #cf1d1d), to(#ab1818));
+  background: linear-gradient(to right, #ff2b2b 0%, #c23131 15%, #ff0505 51%, #cf1d1d 71%, #ab1818 100%);
+}
+
+.grid-container .controls-panel .active-strict {
+  background: -webkit-gradient(linear, left top, right top, from(#ff2b2b), color-stop(15%, #c23131), color-stop(51%, #ff0505), color-stop(71%, #cf1d1d), to(#ab1818)) !important;
+  background: linear-gradient(to right, #ff2b2b 0%, #c23131 15%, #ff0505 51%, #cf1d1d 71%, #ab1818 100%) !important;
+}

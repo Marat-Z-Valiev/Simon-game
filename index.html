@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Simon game</title>
+</head>
+
+<body>
+    <header>
+        <h1>Simon game</h1>
+    </header>
+    <main>
+        <div class="grid-container"> 
+            <div id="white" class="white colors"></div>
+            <div id="yellow" class="yellow colors"></div>
+            <div class="controls-panel">
+                <input id="display" class="display" disabled value="--">
+                <div class="controls">
+                    <button id="start" class="start"></button>
+                    <p>Start</p>
+                </div>
+                <div class="controls">
+                    <button id="strict" class="strict"></button>
+                    <p>Strict</p>
+                </div>
+            </div>
+            <div id="pink" class="pink colors"></div>
+            <div id="blue" class="blue colors"></div>
+        </div>
+    </main>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
